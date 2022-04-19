@@ -46,22 +46,4 @@ public class TicketPricePage {
     public WebElement getSBC () {
         return Constant.WEBDRIVER.findElement(SBC);
     }
-
-    /**
-     * Methods
-     */
-    public String getTextTitleOfTicketPrice () {
-        return getTitleOfTicketPrice().getText();
-    }
-
-    public String[] getTicketPrice () {
-        String HS = getHS().getText();
-        String SS = getSS().getText();
-        String SSC = getSSC().getText();
-        String HB = getHB().getText();
-        String SB = getSB().getText();
-        String SBC = getSBC().getText();
-        String[] ticketPrice = {HS, SS, SSC, HB, SB, SBC};
-        return ticketPrice;
-    }
 }

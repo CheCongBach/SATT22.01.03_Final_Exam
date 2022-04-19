@@ -18,11 +18,4 @@ public class TimeTablePage {
     public WebElement getCheckTicketButton () {
         return Constant.WEBDRIVER.findElement(checkTicketButton);
     }
-
-    /**
-     * Methods
-     */
-    public void clickCheckTicketButton () {
-        getCheckTicketButton().click();
-    }
 }

@@ -16,11 +16,4 @@ public class HomePage extends BasePage {
     public WebElement findWelcomeGuestElement () {
         return Constant.WEBDRIVER.findElement(welcomeGuestElement);
     }
-
-    /**
-     * Methods
-     */
-    public String getWelcomeElement () {
-        return findWelcomeGuestElement().getText();
-    }
 }

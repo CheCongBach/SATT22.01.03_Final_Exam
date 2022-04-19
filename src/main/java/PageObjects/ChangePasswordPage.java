@@ -36,34 +36,4 @@ public class ChangePasswordPage {
     public WebElement getMessageErrorElement () {
         return Constant.WEBDRIVER.findElement(messageError);
     }
-
-    /**
-     * Methods
-     */
-    public void typeCurrentPasswordField (String currentPassword) {
-        getCurrentPasswordTab().sendKeys(currentPassword);
-    }
-
-    public void typeNewPasswordField (String newPassword) {
-        getNewPasswordElement().sendKeys(newPassword);
-    }
-
-    public void typeConfirmPasswordField (String confirmPassword) {
-        getConfirmPasswordElement().sendKeys(confirmPassword);
-    }
-
-    public void clickChangePasswordButton () {
-        getChangePasswordButton().click();
-    }
-
-    public String getMessageErrorText () {
-        return getMessageErrorElement().getText();
-    }
-
-    public void changePassword (String currentPass, String newPass, String confirmNewPass) {
-        typeCurrentPasswordField(currentPass);
-        typeNewPasswordField(newPass);
-        typeConfirmPasswordField(confirmNewPass);
-        clickChangePasswordButton();
-    }
 }

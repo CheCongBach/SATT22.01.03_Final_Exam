@@ -3,7 +3,6 @@ package PageObjects;
 import Common.Constant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class BookTicketPage {
     /**
@@ -71,65 +70,5 @@ public class BookTicketPage {
 
     public WebElement getInfoAmountTicket () {
         return Constant.WEBDRIVER.findElement(infoAmountTicket);
-    }
-
-    /**
-     * Methods
-     */
-    public void selectValueForDepartDateField (String departDate) {
-        Select valueOfDepartDateField = new Select(getDepartDateField());
-        valueOfDepartDateField.selectByVisibleText(departDate);
-    }
-
-    public void selectValueForDepartFromField (String departFrom) {
-        Select valueOfDepartFromField = new Select(getDepartFromField());
-        valueOfDepartFromField.selectByVisibleText(departFrom);
-    }
-
-    public void selectValueForArriveAtField (String arriveAt) {
-        Select valueOfArriveAtField = new Select(getArriveAtField());
-        valueOfArriveAtField.selectByVisibleText(arriveAt);
-    }
-
-    public void selectValueForSeatTypeField (String seatType) {
-        Select valueOfSeatTypeField = new Select(getSeatTypeField());
-        valueOfSeatTypeField.selectByVisibleText(seatType);
-    }
-
-    public void selectValueForTicketAmountField (String ticletAmount) {
-        Select valueOfTicketAmountField = new Select(getTicketAmountField());
-        valueOfTicketAmountField.selectByVisibleText(ticletAmount);
-    }
-
-    public void clickBookTicketButton () {
-        getBookTicketButton().click();
-    }
-
-    public String getBookTicketSucessfullyText () {
-        return getBookTicketSucessfully().getText();
-    }
-
-    public String[] getInfoTicket () {
-        String departStation = getInfoDepartStationTicket().getText();
-        String arriveAt = getInfoArriveAtTicket().getText();
-        String seatType = getInfoSeatTypeTicket().getText();
-        String departDate = getInfoDepartDateTicket().getText();
-        String amount = getInfoAmountTicket().getText();
-        String[] infoTicket = {departStation, arriveAt, seatType, departDate, amount};
-        return infoTicket;
-    }
-
-    public void bookTicket (String departDate, String departFrom, String arriveAt, String seatType, String amount) throws InterruptedException {
-        try {
-            selectValueForDepartDateField(departDate);
-            selectValueForDepartFromField(departFrom);
-            Thread.sleep(1000);
-            selectValueForArriveAtField(arriveAt);
-            selectValueForSeatTypeField(seatType);
-            selectValueForTicketAmountField(amount);
-            clickBookTicketButton();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
     }
 }

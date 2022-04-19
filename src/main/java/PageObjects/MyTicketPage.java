@@ -18,11 +18,4 @@ public class MyTicketPage {
     public WebElement getCancelButton () {
         return Constant.WEBDRIVER.findElement(cancelButton);
     }
-
-    /**
-     * Methods
-     */
-    public void clickCancelButton () {
-        getCancelButton().click();
-    }
 }

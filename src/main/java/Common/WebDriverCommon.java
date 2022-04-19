@@ -37,4 +37,16 @@ public class WebDriverCommon {
         JavascriptExecutor jse = (JavascriptExecutor) Constant.WEBDRIVER;
         jse.executeScript("document.body.style.zoom='130%';");
     }
+
+    public static void shortTime (Integer time) throws InterruptedException {
+        Thread.sleep(time);
+    }
+
+    public static void mediumTime (Integer time) throws InterruptedException {
+        Thread.sleep(time);
+    }
+
+    public static void longTime (Integer time) throws InterruptedException {
+        Thread.sleep(time);
+    }
 }
