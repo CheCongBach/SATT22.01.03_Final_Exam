@@ -2135,3 +2135,216 @@
 [INFO ] 20-04-2022 11:37:09 [main] Log - Click apply filter
 [INFO ] 20-04-2022 11:37:10 [main] Log - Declare variable
 [INFO ] 20-04-2022 11:37:10 [main] Log - Compare expected message with actual message
+[DEBUG] 20-04-2022 11:46:48 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 20-04-2022 11:46:48 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 20-04-2022 11:46:48 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 20-04-2022 11:46:48 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@40499e4f
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - Java version: 16
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @340f438e
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - maxDirectMemory: 1990197248 bytes (maybe)
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\ASUSTR~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - Platform: Windows
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 20-04-2022 11:46:48 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 20-04-2022 11:46:48 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 20-04-2022 11:46:48 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 20-04-2022 11:46:48 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 20-04-2022 11:46:48 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 20-04-2022 11:46:48 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 20-04-2022 11:46:48 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+[DEBUG] 20-04-2022 11:46:48 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 20-04-2022 11:46:48 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 19
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 19
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 20-04-2022 11:46:48 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 20-04-2022 11:46:48 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 20-04-2022 11:46:49 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 20-04-2022 11:46:49 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 21780 (auto-detected)
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 20-04-2022 11:46:49 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: 7c:10:c9:ff:fe:27:fa:09 (auto-detected)
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@466b9275
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[DEBUG] 20-04-2022 11:46:49 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 20-04-2022 11:46:50 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xb8af147f9360195d
+[INFO ] 20-04-2022 11:46:53 [main] Log - Navigate to register page
+[INFO ] 20-04-2022 11:46:54 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:46:54 [main] Log - Create new account with valid info
+[INFO ] 20-04-2022 11:46:56 [main] Log - Navigate to login page
+[INFO ] 20-04-2022 11:46:56 [main] Log - Login with valid account
+[INFO ] 20-04-2022 11:46:58 [main] Log - Navigate to book ticket page
+[INFO ] 20-04-2022 11:46:58 [main] Log - Book ticket 1 with valid info
+[INFO ] 20-04-2022 11:47:01 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:01 [main] Log - Book ticket 2 with valid info
+[INFO ] 20-04-2022 11:47:04 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:04 [main] Log - Book ticket 3 with valid info
+[INFO ] 20-04-2022 11:47:06 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:07 [main] Log - Book ticket 4 with valid info
+[INFO ] 20-04-2022 11:47:09 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:10 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:47:12 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:13 [main] Log - Book ticket 6 with valid info
+[INFO ] 20-04-2022 11:47:16 [main] Log - Navigate to my ticket page
+[INFO ] 20-04-2022 11:47:16 [main] Log - Sleep in 2s
+[INFO ] 20-04-2022 11:47:19 [main] Log - Select 'Sài Gòn' for depart station
+[INFO ] 20-04-2022 11:47:19 [main] Log - Click apply filter
+[INFO ] 20-04-2022 11:47:19 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:47:19 [main] Log - Compare to expected depart station value of actual depart station value
+[INFO ] 20-04-2022 11:47:24 [main] Log - Navigate to register page
+[INFO ] 20-04-2022 11:47:25 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:47:25 [main] Log - Create new account with valid info
+[INFO ] 20-04-2022 11:47:26 [main] Log - Navigate to login page
+[INFO ] 20-04-2022 11:47:27 [main] Log - Login with valid account
+[INFO ] 20-04-2022 11:47:28 [main] Log - Navigate to book ticket page
+[INFO ] 20-04-2022 11:47:29 [main] Log - Book ticket 1 with valid info
+[INFO ] 20-04-2022 11:47:31 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:32 [main] Log - Book ticket 2 with valid info
+[INFO ] 20-04-2022 11:47:34 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:35 [main] Log - Book ticket 3 with valid info
+[INFO ] 20-04-2022 11:47:37 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:38 [main] Log - Book ticket 4 with valid info
+[INFO ] 20-04-2022 11:47:40 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:41 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:47:43 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:47:44 [main] Log - Book ticket 6 with valid info
+[INFO ] 20-04-2022 11:47:46 [main] Log - Navigate to my ticket page
+[INFO ] 20-04-2022 11:47:47 [main] Log - Sleep in 2s
+[INFO ] 20-04-2022 11:47:49 [main] Log - Select 'Paid' for status
+[INFO ] 20-04-2022 11:47:49 [main] Log - Click apply filter
+[INFO ] 20-04-2022 11:47:50 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:47:50 [main] Log - Compare to expected message with actual message
+[DEBUG] 20-04-2022 11:48:46 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 20-04-2022 11:48:46 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 20-04-2022 11:48:46 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 20-04-2022 11:48:46 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@41925502
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - Java version: 16
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @36d64342
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - maxDirectMemory: 1990197248 bytes (maybe)
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\ASUSTR~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - Platform: Windows
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 20-04-2022 11:48:46 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 20-04-2022 11:48:46 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 20-04-2022 11:48:46 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 20-04-2022 11:48:46 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 20-04-2022 11:48:46 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 20-04-2022 11:48:46 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 20-04-2022 11:48:46 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+[DEBUG] 20-04-2022 11:48:46 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 20-04-2022 11:48:46 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 19
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 19
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 20-04-2022 11:48:46 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 20-04-2022 11:48:46 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 20-04-2022 11:48:46 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 20-04-2022 11:48:46 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 1064 (auto-detected)
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 20-04-2022 11:48:46 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: 7c:10:c9:ff:fe:27:fa:09 (auto-detected)
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@51f31540
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 20-04-2022 11:48:46 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[DEBUG] 20-04-2022 11:48:49 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[INFO ] 20-04-2022 11:48:51 [main] Log - Navigate to register page
+[INFO ] 20-04-2022 11:48:52 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:48:52 [main] Log - Create new account with valid info
+[INFO ] 20-04-2022 11:48:53 [main] Log - Navigate to login page
+[INFO ] 20-04-2022 11:48:54 [main] Log - Login with valid account
+[INFO ] 20-04-2022 11:48:55 [main] Log - Navigate to book ticket page
+[INFO ] 20-04-2022 11:48:56 [main] Log - Book ticket 1 with valid info
+[INFO ] 20-04-2022 11:48:59 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:48:59 [main] Log - Book ticket 2 with valid info
+[INFO ] 20-04-2022 11:49:02 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:03 [main] Log - Book ticket 3 with valid info
+[INFO ] 20-04-2022 11:49:06 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:07 [main] Log - Book ticket 4 with valid info
+[INFO ] 20-04-2022 11:49:10 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:10 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:49:13 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:14 [main] Log - Book ticket 6 with valid info
+[INFO ] 20-04-2022 11:49:17 [main] Log - Navigate to my ticket page
+[INFO ] 20-04-2022 11:49:18 [main] Log - Sleep in 2s
+[INFO ] 20-04-2022 11:49:20 [main] Log - Select 'Sài Gòn' for depart station
+[INFO ] 20-04-2022 11:49:20 [main] Log - Click apply filter
+[INFO ] 20-04-2022 11:49:21 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:49:21 [main] Log - Compare to expected depart station value of actual depart station value
+[INFO ] 20-04-2022 11:49:26 [main] Log - Navigate to register page
+[INFO ] 20-04-2022 11:49:26 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:49:26 [main] Log - Create new account with valid info
+[INFO ] 20-04-2022 11:49:28 [main] Log - Navigate to login page
+[INFO ] 20-04-2022 11:49:28 [main] Log - Login with valid account
+[INFO ] 20-04-2022 11:49:30 [main] Log - Navigate to book ticket page
+[INFO ] 20-04-2022 11:49:30 [main] Log - Book ticket 1 with valid info
+[INFO ] 20-04-2022 11:49:33 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:34 [main] Log - Book ticket 2 with valid info
+[INFO ] 20-04-2022 11:49:37 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:37 [main] Log - Book ticket 3 with valid info
+[INFO ] 20-04-2022 11:49:40 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:41 [main] Log - Book ticket 4 with valid info
+[INFO ] 20-04-2022 11:49:44 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:45 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:49:48 [main] Log - Come back to book ticket page
+[INFO ] 20-04-2022 11:49:48 [main] Log - Book ticket 6 with valid info
+[INFO ] 20-04-2022 11:49:51 [main] Log - Navigate to my ticket page
+[INFO ] 20-04-2022 11:49:52 [main] Log - Sleep in 2s
+[INFO ] 20-04-2022 11:49:54 [main] Log - Select 'Paid' for status
+[INFO ] 20-04-2022 11:49:54 [main] Log - Click apply filter
+[INFO ] 20-04-2022 11:49:55 [main] Log - Declare variable
+[INFO ] 20-04-2022 11:49:55 [main] Log - Compare to expected message with actual message
