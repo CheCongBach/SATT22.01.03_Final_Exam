@@ -103,7 +103,7 @@ public class TC02 extends TestBase {
                 "Please change the filters and try again.";
         String actualErrorMessage = myTicketPage.getTextErrorMessage();
 
-        Log.info("Compare expected message with actual message");
+        Log.info("Compare to expected message with actual message");
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
     }
 }

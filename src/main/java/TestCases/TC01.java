@@ -101,7 +101,7 @@ public class TC01 extends TestBase {
         String expectDepartStationValue = "Sài Gòn";
         String actualDepartStationValue = myTicketPage.getTextValueOfDepartStation();
 
-        Log.info("Compare");
+        Log.info("Compare to expected depart station value of actual depart station value");
         Assert.assertEquals(actualDepartStationValue, expectDepartStationValue);
     }
 }
