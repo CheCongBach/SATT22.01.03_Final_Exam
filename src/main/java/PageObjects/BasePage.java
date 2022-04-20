@@ -8,39 +8,14 @@ public class BasePage {
     /**
      * Locators
      */
-    private By homeTab = By.xpath("//a[@href='../']/descendant::span");
-    private By FAQTab = By.xpath("//a[@href='#']/descendant::span");
-    private By contactTab = By.xpath("//a[@href='/Page/Contact.cshtml']");
-    private By trainTimeTableTab = By.xpath("//a[@href='TrainTimeListPage.cshtml']");
-    private By ticketPriceTab = By.xpath("//a[@href='/Page/TrainPriceListPage.cshtml']/descendant::span");
     private By bookTicketTab = By.xpath("//a[@href='/Page/BookTicketPage.cshtml']");
     private By registerTab = By.xpath("//a[@href='/Account/Register.cshtml']");
     private By loginPageTab = By.xpath("//a[@href='/Account/Login.cshtml']");
     private By myTicketTab = By.xpath("//a[@href='/Page/ManageTicket.cshtml']");
-    private By changePasswordTab = By.xpath("//a[@href='/Account/ChangePassword.cshtml']");
-    private By logOutTab = By.xpath("//a[@href='/Account/Logout']");
 
     /**
      * Elements
      */
-    public WebElement getHomeTab () {
-        return Constant.WEBDRIVER.findElement(homeTab);
-    }
-
-    public WebElement getFAQTab () {
-        return Constant.WEBDRIVER.findElement(FAQTab);
-    }
-
-    public WebElement getContactTab () { return Constant.WEBDRIVER.findElement(contactTab); }
-
-    public WebElement getLinkTimeTableTab () {
-        return Constant.WEBDRIVER.findElement(trainTimeTableTab);
-    }
-
-    public WebElement getTicketPriceTab () {
-        return Constant.WEBDRIVER.findElement(ticketPriceTab);
-    }
-
     public WebElement getLinkBookTicketTab () {
         return Constant.WEBDRIVER.findElement(bookTicketTab);
     }
@@ -57,11 +32,22 @@ public class BasePage {
         return Constant.WEBDRIVER.findElement(myTicketTab);
     }
 
-    public WebElement getChangePasswordTab () {
-        return Constant.WEBDRIVER.findElement(changePasswordTab);
+    /**
+     * Methods
+     */
+    public void moveToLoginPage () {
+        getLinkLoginTab().click();
     }
 
-    public WebElement getLogOutTab () {
-        return Constant.WEBDRIVER.findElement(logOutTab);
+    public void moveToBookTicketPage () {
+        getLinkBookTicketTab().click();
+    }
+
+    public void moveToRegisterTab () {
+        getRegisterTab().click();
+    }
+
+    public void moveToMyTicketTab () {
+        getMyTicketTab().click();
     }
 }

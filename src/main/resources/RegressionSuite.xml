@@ -4,6 +4,8 @@
     <parameter name="browser" value="chrome"/>
     <test name="RegA">
         <classes>
+            <class name="TestCases.TC01"/>
+            <class name="TestCases.TC02"/>
         </classes>
     </test>
 </suite>

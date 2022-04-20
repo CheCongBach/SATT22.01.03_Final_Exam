@@ -13,10 +13,6 @@ public class RegisterPage {
     private By confirmPasswordRegisterForm = By.xpath("//input[@id='confirmPassword']");
     private By pidRegisterForm = By.xpath("//input[@id='pid']");
     private By registerButton = By.xpath("//input[@value='Register']");
-    private By confirmRegisterSuccessfully = By.xpath("//div[@id='content']/descendant::p");
-    private By messageError = By.xpath("//p[@class='message error']");
-    private By invalidPasswordMessage = By.xpath("//label[@for='password'][@class='validation-error']");
-    private By invalidIDMessage = By.xpath("//label[@for='pid'][@class='validation-error']");
 
     /**
      * Elements
@@ -41,19 +37,34 @@ public class RegisterPage {
         return Constant.WEBDRIVER.findElement(registerButton);
     }
 
-    public WebElement getConfirmRegisterSuccessfully () {
-        return Constant.WEBDRIVER.findElement(confirmRegisterSuccessfully);
+    /**
+     * Methods
+     */
+    public void typeInfoForEmailField (String email) {
+        getEmailOfRegisterForm().sendKeys(email);
     }
 
-    public WebElement getMessageError () {
-        return Constant.WEBDRIVER.findElement(messageError);
+    public void typeInfoForPasswordField (String password) {
+        getPasswordOfRegisterForm().sendKeys(password);
     }
 
-    public WebElement getInvalidPasswordMessage () {
-        return Constant.WEBDRIVER.findElement(invalidPasswordMessage);
+    public void typeInfoForConfirmPassField (String confirmPass) {
+        getConfirmPasswordOfRegisterForm().sendKeys(confirmPass);
     }
 
-    public WebElement getInvalidIDMessage () {
-        return Constant.WEBDRIVER.findElement(invalidIDMessage);
+    public void typeInfoForPIDField (String PID) {
+        getPidOfRegisterForm().sendKeys(PID);
+    }
+
+    public void clickRegisterButton () {
+        getRegisterButton().click();
+    }
+
+    public void register (String email, String password, String confirmPass, String PID) {
+        typeInfoForEmailField(email);
+        typeInfoForPasswordField(password);
+        typeInfoForConfirmPassField(confirmPass);
+        typeInfoForPIDField(PID);
+        clickRegisterButton();
     }
 }

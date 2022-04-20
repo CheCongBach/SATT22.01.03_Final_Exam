@@ -1,8 +1,10 @@
 package PageObjects;
 
 import Common.Constant;
+import Common.WebDriverCommon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class BookTicketPage {
     /**
@@ -14,12 +16,6 @@ public class BookTicketPage {
     private By seatTypeField = By.xpath("//select[@name='SeatType']");
     private By ticketAmountField = By.xpath("//select[@name='TicketAmount']");
     private By bookTicketButton = By.xpath("//input[@value='Book ticket']");
-    private By bookTicketSucessfully = By.xpath("//h1[@align='center'][text()='Ticket Booked Successfully!']");
-    private By infoDepartStationTicket = By.xpath("//tr/td[count(//th[text()='Depart Station']/preceding-sibling::th) + 1]");
-    private By infoArriveAtTicket = By.xpath("//tr/td[count(//th[text()='Arrive Station']/preceding-sibling::th) + 1]");
-    private By infoSeatTypeTicket = By.xpath("//tr/td[count(//th[text()='Seat Type']/preceding-sibling::th) + 1]");
-    private By infoDepartDateTicket = By.xpath("//tr/td[count(//th[text()='Depart Date']/preceding-sibling::th) + 1]");
-    private By infoAmountTicket = By.xpath("//tr/td[count(//th[text()='Amount']/preceding-sibling::th) + 1]");
 
     /**
      * Elements
@@ -48,27 +44,49 @@ public class BookTicketPage {
         return Constant.WEBDRIVER.findElement(bookTicketButton);
     }
 
-    public WebElement getBookTicketSucessfully () {
-        return Constant.WEBDRIVER.findElement(bookTicketSucessfully);
+    /**
+     * Methods
+     */
+    public void selectValueForDepartDateField (String departDate) {
+        Select valueOfDepartDateField = new Select(getDepartDateField());
+        valueOfDepartDateField.selectByVisibleText(departDate);
     }
 
-    public WebElement getInfoDepartStationTicket () {
-        return Constant.WEBDRIVER.findElement(infoDepartStationTicket);
+    public void selectValueForDepartFromField (String departFrom) {
+        Select valueOfDepartFromField = new Select(getDepartFromField());
+        valueOfDepartFromField.selectByVisibleText(departFrom);
     }
 
-    public WebElement getInfoArriveAtTicket () {
-        return Constant.WEBDRIVER.findElement(infoArriveAtTicket);
+    public void selectValueForArriveAtField (String arriveAt) {
+        Select valueOfArriveAtField = new Select(getArriveAtField());
+        valueOfArriveAtField.selectByVisibleText(arriveAt);
     }
 
-    public WebElement getInfoSeatTypeTicket () {
-        return Constant.WEBDRIVER.findElement(infoSeatTypeTicket);
+    public void selectValueForSeatTypeField (String seatType) {
+        Select valueOfSeatTypeField = new Select(getSeatTypeField());
+        valueOfSeatTypeField.selectByVisibleText(seatType);
     }
 
-    public WebElement getInfoDepartDateTicket () {
-        return Constant.WEBDRIVER.findElement(infoDepartDateTicket);
+    public void selectValueForTicketAmountField (String ticletAmount) {
+        Select valueOfTicketAmountField = new Select(getTicketAmountField());
+        valueOfTicketAmountField.selectByVisibleText(ticletAmount);
     }
 
-    public WebElement getInfoAmountTicket () {
-        return Constant.WEBDRIVER.findElement(infoAmountTicket);
+    public void clickBookTicketButton () {
+        getBookTicketButton().click();
+    }
+
+    public void bookTicket (String departDate, String departFrom, String arriveAt, String seatType, String ticketAmount) throws InterruptedException {
+        try {
+            selectValueForDepartDateField(departDate);
+            selectValueForDepartFromField(departFrom);
+            WebDriverCommon.shortTime(1000);
+            selectValueForArriveAtField(arriveAt);
+            selectValueForSeatTypeField(seatType);
+            selectValueForTicketAmountField(ticketAmount);
+            clickBookTicketButton();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
