@@ -2,11 +2,20 @@ package PageObjects;
 
 import Common.Constant;
 import Common.WebDriverCommon;
+import TestCases.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+import java.lang.reflect.Array;
 
-public class BookTicketPage {
+
+public class BookTicketPage extends TestBase {
+    /**
+     * Declare objects
+     */
+    HomePage homePage = new HomePage();
+
     /**
      * Locators
      */
@@ -79,6 +88,7 @@ public class BookTicketPage {
     public void bookTicket (String departDate, String departFrom, String arriveAt, String seatType, String ticketAmount) throws InterruptedException {
         try {
             selectValueForDepartDateField(departDate);
+            WebDriverCommon.scrollDownPage();
             selectValueForDepartFromField(departFrom);
             WebDriverCommon.shortTime(1000);
             selectValueForArriveAtField(arriveAt);
@@ -88,5 +98,21 @@ public class BookTicketPage {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    @Test(dataProvider = "data")
+    public void bookTicketWithMoreTime (Object[] dataObjects) throws InterruptedException {
+        String departDate = dataObjects[4].toString();
+        String departStation;
+        String arriveAt = dataObjects[7].toString();
+        String seatType = dataObjects[5].toString();
+        String amountTicket = dataObjects[6].toString();
+        int length = Array.getLength(dataObjects);
+        for (int i = 8; i < length; i++) {
+            homePage.moveToBookTicketPage();
+            departStation = dataObjects[i].toString();
+            bookTicket(departDate, departStation, arriveAt, seatType, amountTicket);
+        }
+        homePage.moveToMyTicketTab();
     }
 }

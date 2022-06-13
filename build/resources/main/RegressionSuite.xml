@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <test name="RegA">
         <classes>
-            <class name="TestCases.TC01"/>
-            <class name="TestCases.TC02"/>
+<!--            <class name="TestCases.TC01"/>-->
+<!--            <class name="TestCases.TC02"/>-->
+            <class name="TestCases.TC03"/>
         </classes>
     </test>
 </suite>
